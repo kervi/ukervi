@@ -1,7 +1,7 @@
-
+print("load uapplication module")
 import os
 import sys
-from kervi.application.default_config import get_default_config
+from kervi.uapplication.default_config import get_default_config
 
 
 class Application(object):

@@ -59,8 +59,8 @@ setup(
         "Programming Language :: Python :: 3.4"
     ],
     install_requires=[
-        'kervi-core',
-        'kervi-device-library',
+        'kervi-core'
+        
     ],
     extras_require={
         

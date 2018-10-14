@@ -1,4 +1,4 @@
-import kervi.utility.nethelper as nethelper
+#import kervi.utility.nethelper as nethelper
 
 def get_default_config():
     return  {
@@ -12,7 +12,7 @@ def get_default_config():
         "discovery":{
             "enabled": True,
             "challenge": "kervi",
-            "port": nethelper.get_free_port([9434])
+            #"port": nethelper.get_free_port([9434])
         },
         "log" : {
             "levels":["fatal", "error", "warning", "information", "debug"],
@@ -21,11 +21,11 @@ def get_default_config():
             "resetLog": False
         },
         "network" : {
-            "ip": nethelper.get_ip_address(),
-            "http_port": nethelper.get_free_port([80, 8080, 8081]),
-            "ws_port": nethelper.get_free_port([9000]),
-            "ipc_root_port": nethelper.get_free_port([9500]),
-            "ipc_root_address": nethelper.get_ip_address()
+            #"ip": nethelper.get_ip_address(),
+            #"http_port": nethelper.get_free_port([80, 8080, 8081]),
+            #"ws_port": nethelper.get_free_port([9000]),
+            #"ipc_root_port": nethelper.get_free_port([9500]),
+            #"ipc_root_address": nethelper.get_ip_address()
         },
         "plugins":{
             "authentication": {

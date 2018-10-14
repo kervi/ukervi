@@ -1,7 +1,7 @@
 print("load uapplication module")
 import os
 import sys
-from default_config import get_default_config
+from .default_config import get_default_config
 
 
 class Application(object):

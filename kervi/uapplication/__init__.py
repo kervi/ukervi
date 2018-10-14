@@ -8,7 +8,7 @@ class Application(object):
     def __init__(self, user_config = None):
 
         print("Starting kervi (u)application")
-        import inspect
+        #import inspect
         import getopt
         
         config_files = []
@@ -20,12 +20,12 @@ class Application(object):
                     config_files += [arg]
                 else:
                     print("Specified config file not found:", arg)
-        script_path = os.path.abspath(inspect.stack()[1][1])
-        script_name = os.path.basename(script_path)
-        script_name, script_ext = os.path.splitext(script_name)
+        #script_path = os.path.abspath(inspect.stack()[1][1])
+        #script_name = os.path.basename(script_path)
+        #script_name, script_ext = os.path.splitext(script_name)
         
-        config_files += [script_name +".config.json"]
-        config_files += ["kervi.config.json"]
+        #config_files += [script_name +".config.json"]
+        #config_files += ["kervi.config.json"]
 
         selected_config_file = None
         for config_file in config_files:

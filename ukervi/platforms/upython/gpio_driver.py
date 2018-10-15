@@ -1,7 +1,7 @@
-# Copyright (c) 2016, Tim Wentzlau
-# Licensed under MIT
-from kervi.hal.gpio import IGPIODeviceDriver
+#Copyright 2018 Tim Wentlau.
+#Distributed under the MIT License. See LICENSE in root of project.
 
+from kervi.hal.gpio import IGPIODeviceDriver
 
 class GPIODriver(IGPIODeviceDriver):
     def __init__(self, gpio_id="UPYTHON_GPIO"):

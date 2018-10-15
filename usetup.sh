@@ -9,3 +9,4 @@ micropython -m upip install micropython-treading
 micropython -m upip install micropython-traceback
 micropython -m upip install micropython-types
 micropython -m upip install micropython-string
+micropython -m upip install kervi-core

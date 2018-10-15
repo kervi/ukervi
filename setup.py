@@ -2,7 +2,7 @@
 from distutils.core import setup
 import distutils
 try:
-    from kervi.platforms.upython.version import VERSION
+    from ukervi.platforms.upython.version import VERSION
 except:
     VERSION = "0.0"
 
@@ -12,10 +12,10 @@ except:
     pass
 
 setup(
-    name='kervi',
+    name='ukervi',
     packages=[
-        'kervi',
-        'kervi/application',
+        'ukervi',
+        'ukervi/application',
         #'kervi/messaging',
         #'kervi/module',
         #'kervi/plugin',
@@ -30,19 +30,20 @@ setup(
         #'kervi/storage',
         #'kervi/zmq_spine',
         #'kervi/utility',
-        'kervi/platforms/upython/version',
+        'ukervi/platforms/upython',
         #'kervi/vision',
     ],
     version=VERSION,
     description="""
     A python framework for creating robotic and automation applications on Raspbery pi (and other platforms).
     UI is web based and generated on the fly based on configuration in python code.
+    This package 
     """,
     author='Tim Wentzlau',
     author_email='tim.wentzlau@gmail.com',
     url='https://github.com/kervi/kervi',
     download_url='https://github.com/kervi/kervi/archive/v1.0-alpha.tar.gz',
-    keywords=['raspberry pi', 'robotic', 'automation'],
+    keywords=['upython', 'micropython', 'robotic', 'automation'],
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Development Status :: 4 - Beta",
@@ -60,7 +61,6 @@ setup(
     ],
     install_requires=[
         'kervi-core'
-        
     ],
     extras_require={
         

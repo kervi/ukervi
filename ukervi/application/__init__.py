@@ -1,4 +1,6 @@
-print("load uapplication module")
+#Copyright 2018 Tim Wentlau.
+#Distributed under the MIT License. See LICENSE in root of project.
+
 import os
 import sys
 from .default_config import get_default_config

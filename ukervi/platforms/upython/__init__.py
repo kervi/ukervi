@@ -1,3 +1,6 @@
+#Copyright 2018 Tim Wentlau.
+#Distributed under the MIT License. See LICENSE in root of project.
+
 def get_gpio_driver():
     from . import gpio_driver
     return gpio_driver.GPIODriver()
